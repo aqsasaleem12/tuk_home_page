@@ -79,7 +79,7 @@ const Homepage = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> 
 
         {/* components-img */}
         <div className="mt-11 w-full">

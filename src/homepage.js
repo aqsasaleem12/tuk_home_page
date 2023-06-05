@@ -102,7 +102,7 @@ const Homepage = () => {
             </div>
             <div className="border border-white/10 !rounded-xl p-1 mt-12">
               <img
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Exportthi%20inSVG.svg"
+                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/TukHeroImgv3.png"
                 className="mx-auto rounded-xl"
               />
             </div>

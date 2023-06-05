@@ -10,15 +10,13 @@ video {
   height: 80vh;
   top: 0;
   left: 0;
-
- 
 }
 
 .overlay-content {
   position: absolute;
   top: 0;
   left: 0;
- 
+
   width: 100vw;
   height: 60vh;
 }
@@ -38,7 +36,7 @@ code {
 }
 .bgr-light {
   background: rgba(255, 255, 255, 0.21);
-filter: blur(158px);
+  filter: blur(158px);
   z-index: 50;
 }
 .color-gradient {
@@ -65,4 +63,14 @@ filter: blur(158px);
     rgba(255, 255, 255, 0)
   );
   border-image-slice: 1;
+}
+
+.bg {
+  background: linear-gradient(
+    180.57deg,
+    rgba(0, 0, 0, 0.0504) 0.5%,
+    rgba(3, 1, 20, 0.21) 97.06%
+  );
+  backdrop-filter: blur(27.1828px);
+  border-radius: 12px;
 }

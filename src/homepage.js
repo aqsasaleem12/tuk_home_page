@@ -94,17 +94,20 @@ const Homepage = () => {
                 />
               </div>
               {/* main-button */}
-              <div className="text-center">
+              <div className="text-center ">
                 <button className="max-w-[308px] w-full text-lg  rounded-[7px] py-4 text-white uppercase button leading-[28.8px]">
                   Get started for free
                 </button>
               </div>
             </div>
-            <div className="border border-white/10 !rounded-xl p-1 mt-12">
+            <div className="bg">
+
+            <div className="border border-white/10 !rounded-xl p-1 mt-12 ">
               <img
                 src="https://tuk-cdn.s3.amazonaws.com/can-uploader/TukHeroImgv3.png"
-                className="mx-auto rounded-xl"
+                className="mx-auto rounded-xl "
               />
+            </div>
             </div>
           </div>
         </div>

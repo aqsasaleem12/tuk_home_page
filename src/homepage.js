@@ -6,8 +6,8 @@ const Homepage = () => {
       <div className=" ">
         {/* top-bar */}
 
-        <div className="fixed w-full bg-main top-0 colo-gradient py-5 z-30">
-          <div className="flex items-center relative  justify-between max-w-7xl w-full mx-auto">
+        <div className="fixed w-full bg-main top-0  py-5 z-30">
+          <div className="flex items-center relative  justify-between max-w-7xl w-full mx-auto ">
             {/* logo */}
             <div>
               <img
@@ -16,12 +16,20 @@ const Homepage = () => {
               />
             </div>
             {/* menus */}
-            <div>
-              <ul className="flex text-sm gap-5 leading-[14px]">
-                <li className="text-[#F3F4F6]  cursor-pointer">COMPONENTS</li>
-                <li className="text-[#444E66] cursor-pointer">UI KITS</li>
-                <li className="text-[#444E66] cursor-pointer">TEMPLATES</li>
-                <li className="text-[#444E66] cursor-pointer">PRICING</li>
+            <div className=" flex justify-evenly w-full  ">
+              <ul className="flex gap-12 leading-[14px] justify-center ">
+                <li className="text-[#F3F4F6]  cursor-pointer  text-sm">
+                  COMPONENTS
+                </li>
+                <li className="text-[#444E66] cursor-pointer  text-sm">
+                  UI KITS
+                </li>
+                <li className="text-[#444E66] cursor-pointer  text-sm">
+                  TEMPLATES
+                </li>
+                <li className="text-[#444E66] cursor-pointer  text-sm">
+                  PRICING
+                </li>
               </ul>
             </div>
             {/* buttons */}
@@ -29,17 +37,20 @@ const Homepage = () => {
               <button className="text-[#444E66] text-sm leading-[14px]">
                 Login
               </button>
-              <button className="text-white text-sm leading-[14px]">
+              <button className="text-white text-sm leading-[14px] min-w-[124px]">
                 Get started for fee
               </button>
             </div>
-            <div className="bgr-light absolute w-[400px] h-[200px] left-[40%] right-[50%]"></div>
+            <div className="bgr-light absolute"></div>
+
+            </div>
+            <div className="border-topNav">
           </div>
         </div>
 
         {/* main sec */}
         <div className="main-se ">
-          <div className="flex flex-col gap-2 justify-center items-center pt-[200px]">
+          <div className="flex flex-col gap-2 justify-center items-center pt-[130px]">
             <h1 className="text-[64px] font-semi-bold leading-[76px] text-center font-semibold color-gradient">
               Deliver Better with Tailwind CSS
             </h1>
@@ -55,13 +66,14 @@ const Homepage = () => {
 
         <div className="relative w-full ">
           <video
-            className="w-full h-full max-h-[981px] relative "
+            className="w-full max-w-[88%] mx-auto h-full max-h-[981px] relative "
             height="100%"
             width="100%"
-            src="/vedio/animation.mp4"
+            src="/vedio/tuk_bg.webm"
             sidedock="0"
             title="0"
-            frameBorder="0"y
+            frameBorder="0"
+            y
             // allow="autoplay; picture-in-picture"
             autoPlay
             loop
@@ -100,14 +112,16 @@ const Homepage = () => {
                 </button>
               </div>
             </div>
-            <div className="bg">
+              <div className="border-r border-t border-l border-white/10 !rounded-xl p-1 mt-12 ">
+            <div className="bg border border-white/10">
+                <img
+                  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/comp-png.png"
+                  className="mx-auto rounded-xl "
+                />
+                <div className="grad-Inner">
 
-            <div className="border border-white/10 !rounded-xl p-1 mt-12 ">
-              <img
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/TukHeroImgv3.png"
-                className="mx-auto rounded-xl "
-              />
-            </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -120,7 +134,7 @@ const Homepage = () => {
             </h2>
           </div>
           {/* logos */}
-          <div className="flex justify-center gap-10">
+          <div className="flex justify-center gap-10 pb-20">
             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Yandex.svg" />
             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/gforgia.svg" />
             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/gohmson.svg" />

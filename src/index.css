@@ -20,8 +20,8 @@ code {
     monospace;
 }
 .bgr-light {
-  background: linear-gradient(45.2deg, #cb1b82 19.09%, #0d0057 37.27%);
-  filter: blur(158px);
+  background: rgba(255, 255, 255, 0.21);
+filter: blur(158px);
   z-index: 50;
 }
 .color-gradient {

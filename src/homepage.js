@@ -6,17 +6,17 @@ const Homepage = () => {
       <div className=" ">
         {/* top-bar */}
 
-        <div className="fixed w-full bg-main top-0  py-5 z-30">
-          <div className="flex items-center relative  justify-between max-w-7xl w-full mx-auto ">
+        <div className="fixed w-full bg-main top-0   z-30">
+          <div className="flex items-center relative  justify-between py-8 max-w-7xl w-full mx-auto ">
             {/* logo */}
-            <div>
+            <div className="flex justify-start w-full">
               <img
                 src="https://tuk-cdn.s3.amazonaws.com/can-uploader/TukUpdatedLogov3.svg"
                 alt="tuk-logo"
               />
             </div>
             {/* menus */}
-            <div className=" flex justify-evenly w-full  ">
+            <div className=" flex justify-center  w-full  ">
               <ul className="flex gap-12 leading-[14px] justify-center ">
                 <li className="text-[#F3F4F6]  cursor-pointer  text-sm">
                   COMPONENTS
@@ -33,7 +33,7 @@ const Homepage = () => {
               </ul>
             </div>
             {/* buttons */}
-            <div className="flex gap-14">
+            <div className="flex w-full justify-end gap-14">
               <button className="text-[#444E66] text-sm leading-[14px]">
                 Login
               </button>
@@ -42,10 +42,8 @@ const Homepage = () => {
               </button>
             </div>
             <div className="bgr-light absolute"></div>
-
-            </div>
-            <div className="border-topNav">
           </div>
+          <hr className="custom-hr" />
         </div>
 
         {/* main sec */}
@@ -112,15 +110,13 @@ const Homepage = () => {
                 </button>
               </div>
             </div>
-              <div className="border-r border-t border-l border-white/10 !rounded-xl p-1 mt-12 ">
-            <div className="bg border border-white/10">
+            <div className="border-r border-t border-l border-white/10 !rounded-xl p-1 mt-12 ">
+              <div className="bg border border-white/10">
                 <img
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/comp-png.png"
                   className="mx-auto rounded-xl "
                 />
-                <div className="grad-Inner">
-
-                </div>
+                <div className="grad-Inner"></div>
               </div>
             </div>
           </div>
@@ -134,7 +130,7 @@ const Homepage = () => {
             </h2>
           </div>
           {/* logos */}
-          <div className="flex justify-center gap-10 pb-20">
+          <div className="flex justify-center gap-10 ">
             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Yandex.svg" />
             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/gforgia.svg" />
             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/gohmson.svg" />
@@ -144,6 +140,19 @@ const Homepage = () => {
             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/apple.svg" />
             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/kentstate.svg" />
           </div>
+        </div>
+
+        {/* The Biggest hr */}
+        <hr className="custom-hr mt-[112px]" />
+        {/* The Biggest Tailwind UI Kit heading */}
+        <div className="flex flex-col gap-2">
+          <h2 className="text-[64px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient mt-[83px]">
+            The Biggest Tailwind UI Kit
+          </h2>
+          <p className="text-[#ABAFB8] text-center max-w-[778px] w-full mx-auto leading-[160%] text-lg">
+            TUK gives developers the functionality to fast track their workflow
+            with 3000+ components and 30 templates
+          </p>
         </div>
       </div>
     </>

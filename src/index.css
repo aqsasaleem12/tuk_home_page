@@ -29,22 +29,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #030014;
 }
-
+/* @font-face {
+  font-family: 'semiboldeot';
+   src: url("./fonts/font/SF-Pro-Display-Black.ttf");
+}
+.heading-f{
+  font-family: "SF-Pro-Display";
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 .bgr-light {
   background: hsla(0, 0%, 100%, 0.21);
-  -webkit-filter: blur(158px);
-  filter: blur(316px);
-  z-index: 50;
-  left: 40%;
-  right: 50%;
   border-radius: 100%;
-  width: 560px;
+  bottom: 36%;
+  -webkit-filter: blur(300px);
+  filter: blur(300px);
   height: 500px;
-  bottom: -13%;
+  left: 27%;
+  right: 50%;
+  width: 560px;
+  z-index: 50;
 }
 /* hr{
   z-index: 30;
@@ -62,11 +68,10 @@ code {
 } */
 .custom-hr {
   position: relative;
- 
+
   border: none;
   height: 1px;
-  background-color: #000;
-  
+
   overflow: visible;
 }
 
@@ -78,11 +83,11 @@ code {
   width: 100%;
   height: 1px;
   background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.1) 44.47%,
-    rgba(255, 255, 255, 0.1) 63.92%,
-    rgba(255, 255, 255, 0) 106.72%
+    271deg,
+    hsla(0, 0%, 100%, 0) 0,
+    hsla(0, 0%, 100%, 0.1) 62.47%,
+    hsla(0, 0%, 100%, 0.1) 56.92%,
+    hsla(0, 0%, 100%, 0) 81.72%
   );
 }
 .grad-Inner {
@@ -129,5 +134,8 @@ code {
     rgba(3, 1, 20, 0.21) 1006
   );
   border-radius: 12px;
+}
+
+.border-around-img {
   box-shadow: 0px 0 12px #dedede29 inset;
 }

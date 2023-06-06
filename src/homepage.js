@@ -48,8 +48,8 @@ const Homepage = () => {
 
         {/* main sec */}
         <div className="main-se ">
-          <div className="flex flex-col gap-2 justify-center items-center pt-[130px]">
-            <h1 className="text-[64px] font-semi-bold leading-[76px] text-center font-semibold color-gradient">
+          <div className="flex flex-col gap-2 justify-center items-center pt-[180px]">
+            <h1 className="text-[64px]  leading-[76px] text-center font-semibold color-gradient heading-f">
               Deliver Better with Tailwind CSS
             </h1>
             <p className="text-[#ABAFB8] text-center max-w-[833px] w-full mx-auto leading-[160%] text-lg">
@@ -110,7 +110,7 @@ const Homepage = () => {
                 </button>
               </div>
             </div>
-            <div className="border-r border-t border-l border-white/10 !rounded-xl p-1 mt-12 ">
+            <div className="border-r border-t border-l border-white/10 !rounded-xl p-1 mt-12 border-around-img">
               <div className="bg border border-white/10">
                 <img
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/comp-png.png"
@@ -154,6 +154,8 @@ const Homepage = () => {
             with 3000+ components and 30 templates
           </p>
         </div>
+        {/* 4-sided-box */}
+        <div></div>
       </div>
     </>
   );

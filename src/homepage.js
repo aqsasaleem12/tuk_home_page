@@ -66,7 +66,7 @@ const Homepage = () => {
             className="w-full max-w-[88%] mx-auto h-full max-h-[981px] relative "
             height="100%"
             width="100%"
-            src="/videos/tuk_bg.webm"
+            src="/vediyo/tuk_bg.webm"
             sidedock="0"
             title="0"
             frameBorder="0"

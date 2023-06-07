@@ -48,7 +48,7 @@ const Homepage = () => {
 
       {/* main sec */}
         <div className="main-se ">
-          <div className="flex flex-col gap-2 justify-center items-center pt-[103px]">
+          <div className="flex flex-col gap-2 justify-center items-center pt-[180px]">
             <h1 className="text-[64px]  leading-[76px] text-center font-semibold color-gradient heading-f">
               Deliver Better with Tailwind CSS
             </h1>

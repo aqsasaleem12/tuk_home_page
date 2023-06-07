@@ -154,7 +154,7 @@ const Homepage = () => {
           </p>
         </div>
         {/* 4-sided-box */}
-        <div className="max-w-[919px] w-full mx-auto   ">
+        <div className="max-w-[919px] w-full mx-auto  mt-[122px] ">
           <div className="relative">
             <img
               src="https://tuk-cdn.s3.amazonaws.com/can-uploader/vector_1.svg"
@@ -208,8 +208,8 @@ const Homepage = () => {
               </div>
             </div>
             <div className="absolute top-[47.5%] bottom-[50%] w-full ">
-              <hr className="custom-hr  rotate-90  " />
-              <hr className="custom-hr " />
+              <hr className="custom-hr-grid  rotate-90  " />
+              <hr className="custom-hr-grid " />
               <div className="min-h-[61px] max-w-[61px] w-full rounded-full flex items-center justify-center left-[47%] right-[49%] absolute -top-[30px]  circle">
                 <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/tailwind-vector.svg" />
               </div>

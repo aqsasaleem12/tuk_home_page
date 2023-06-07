@@ -161,3 +161,29 @@ code {
   text-fill-color: transparent;
 
 }
+
+.custom-hr-grid {
+  position: relative;
+
+  border: none;
+  height: 1px;
+
+  overflow: visible;
+}
+
+.custom-hr-grid:before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    271deg,
+    hsla(0, 0%, 100%, 0) 0,
+    hsla(0, 0%, 100%, 0.1) 62.47%,
+    hsla(0, 0%, 100%, 0.1) 56.92%,
+    hsla(0, 0%, 100%, 0) 81.72%
+  );
+  box-shadow: 5px 5px 40px #826BFF;
+}

@@ -46,13 +46,13 @@ const Homepage = () => {
           <hr className="custom-hr" />
         </div>
 
-        {/* main sec */}
+      {/* main sec */}
         <div className="main-se ">
-          <div className="flex flex-col gap-2 justify-center items-center pt-[180px]">
+          <div className="flex flex-col gap-2 justify-center items-center pt-[103px]">
             <h1 className="text-[64px]  leading-[76px] text-center font-semibold color-gradient heading-f">
               Deliver Better with Tailwind CSS
             </h1>
-            <p className="text-[#ABAFB8] text-center max-w-[833px] w-full mx-auto leading-[160%] text-lg">
+            <p className="text-[#ABAFB8] text-center max-w-[833px] w-full mx-auto leading-[160%] text-lg font-family">
               Build captivating experiences with accessible, fully responsive,
               drop-in-ready components and fast track your workflow. Subscribe
               and get
@@ -61,13 +61,12 @@ const Homepage = () => {
             </p>
           </div>
         </div>
-
         <div className="relative w-full ">
           <video
             className="w-full max-w-[88%] mx-auto h-full max-h-[981px] relative "
             height="100%"
             width="100%"
-            src="/vedio/tuk_bg.webm"
+            src="/videos/tuk_bg.webm"
             sidedock="0"
             title="0"
             frameBorder="0"
@@ -145,17 +144,79 @@ const Homepage = () => {
         {/* The Biggest hr */}
         <hr className="custom-hr mt-[112px]" />
         {/* The Biggest Tailwind UI Kit heading */}
-        <div className="flex flex-col gap-2">
-          <h2 className="text-[64px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient mt-[83px]">
+        <div className="flex flex-col gap-2 max-w-[1003px] w-full mx-auto">
+          <h2 className="text-[64px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient mt-[83px] ">
             The Biggest Tailwind UI Kit
           </h2>
-          <p className="text-[#ABAFB8] text-center max-w-[778px] w-full mx-auto leading-[160%] text-lg">
+          <p className="text-[#ABAFB8] text-center max-w-[504px] w-full mx-auto leading-[160%] text-base font-normal font-family">
             TUK gives developers the functionality to fast track their workflow
             with 3000+ components and 30 templates
           </p>
         </div>
         {/* 4-sided-box */}
-        <div></div>
+        <div className="max-w-[919px] w-full mx-auto   ">
+          <div className="relative">
+            <img
+              src="https://tuk-cdn.s3.amazonaws.com/can-uploader/vector_1.svg"
+              className="mx-auto"
+            />
+
+            <div className="grid grid-cols-2 mx-auto absolute top-0 w-full overflow-hidden">
+              {/* 1st-grid */}
+              <div className="flex flex-col gap-[7px] justify-center items-center  w-full min-h-[305px] h-full relative overflow-hidden group cursor-pointer">
+                <h3 className="text-[22px] font-normal leading-[35.2px] font-family color-gradient-grid  opacity-[0.4] group-hover:opacity-100 transition-all ease-in-out duration-300">
+                  Responsive design
+                </h3>
+                <p className="text-[#B4B4B4]/40 group-hover:text-[#B4B4B4]/100 text-sm max-w-[187px] w-full text-center ">
+                  Adaptive design that provides a consistent experience across
+                  breakpoints
+                </p>
+                <div className="light-shadow absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300"></div>
+              </div>
+              {/* 2nd-grid */}
+              <div className="flex flex-col gap-[7px] justify-center items-center w-full min-h-[305px] h-full  relative overflow-hidden group cursor-pointer">
+                <h3 className="text-[22px] font-normal leading-[35.2px] font-family color-gradient-grid opacity-[0.4] group-hover:opacity-100 transition-all ease-in-out duration-300">
+                  Tested components
+                </h3>
+                <p className="text-[#B4B4B4]/40 group-hover:text-[#B4B4B4]/100 text-sm max-w-[189px] w-full text-center ">
+                  Rigorously tested components that meet the highest quality
+                  standards.
+                </p>
+                <div className="light-shadow-tested absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300"></div>
+              </div>
+              {/* 3rd-grid */}
+              <div className="flex flex-col gap-[7px] justify-center items-center w-full min-h-[305px] h-full  relative overflow-hidden group cursor-pointer">
+                <h3 className="text-[22px] font-normal leading-[35.2px] font-family color-gradient-grid opacity-[0.4] group-hover:opacity-100 transition-all ease-in-out duration-300">
+                  Cross browser compatible
+                </h3>
+                <p className="text-[#B4B4B4]/40 group-hover:text-[#B4B4B4]/100 text-sm max-w-[191px] w-full text-center ">
+                  Cross browser compatible components that are consistent
+                  throughout the web
+                </p>
+                <div className="light-shadow absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300"></div>
+              </div>
+              {/* 4th-grid */}
+              <div className="flex flex-col gap-[7px] justify-center   items-center w-full min-h-[305px] h-full  relative overflow-hidden group cursor-pointer">
+                <h3 className="text-[22px] font-normal leading-[35.2px] font-family color-gradient-grid opacity-[0.4] group-hover:opacity-100 transition-all ease-in-out duration-300">
+                  Inclusive & accessible
+                </h3>
+                <p className="text-[#B4B4B4]/40 group-hover:text-[#B4B4B4]/100 text-sm max-w-[187px] w-full text-center ">
+                  Built on the curb-cut effect, WCAG accessibility comes baked
+                  in for a truly inclusive experience
+                </p>
+                <div className="light-shadow-accessible absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300"></div>
+              </div>
+            </div>
+            <div className="absolute top-[47.5%] bottom-[50%] w-full ">
+              <hr className="custom-hr  rotate-90  " />
+              <hr className="custom-hr " />
+              <div className="min-h-[61px] max-w-[61px] w-full rounded-full flex items-center justify-center left-[47%] right-[49%] absolute -top-[30px]  circle">
+                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/tailwind-vector.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+       
       </div>
     </>
   );

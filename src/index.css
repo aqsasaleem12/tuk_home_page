@@ -277,8 +277,22 @@ code {
 
   border-radius: 12px;
 }
-.img-grad{
-  background: linear-gradient(86.23deg, #709997 1.72%, #27A5B7 22.66%, #6F6FFF 54.37%, #462370 98.87%);
+.img-grad {
+  background: linear-gradient(
+    86.23deg,
+    #709997 1.72%,
+    #27a5b7 22.66%,
+    #6f6fff 54.37%,
+    #462370 98.87%
+  );
   /* filter: blur(100px); */
-  border-radius: 395px
+  border-radius: 395px;
+}
+
+.video-grad-v2 {
+  background: rgba(2, 0, 20, 0.38);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  max-width: 1433px;
+  min-height: 605px;
 }

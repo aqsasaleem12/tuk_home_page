@@ -412,7 +412,7 @@ const Homepage = () => {
             {/*  */}
             <div className="mt-[178px] ">
               <h4 className="text-[48px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient">
-                30 TailwindCSS Templates
+                30 TailwindCSS Templatesz
               </h4>
               <div className="mt-[179px] backdrop">
                 <div className="">

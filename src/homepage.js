@@ -145,7 +145,7 @@ const Homepage = () => {
         <hr className="custom-hr mt-[112px]" />
         {/* The Biggest Tailwind UI Kit heading */}
         <div className="flex flex-col gap-2 max-w-[1003px] w-full mx-auto">
-          <h2 className="text-[64px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient mt-[83px] ">
+          <h2 className="text-[64px] font-semi-bold leading-[76.38px] text-center font-semibold color-gradient mt-[83px] ">
             The Biggest Tailwind UI Kit
           </h2>
           <p className="text-[#ABAFB8] text-center max-w-[504px] w-full mx-auto leading-[160%] text-base font-normal font-family">
@@ -218,88 +218,107 @@ const Homepage = () => {
         </div>
         {/* biggest-kit */}
         <div className="max-w-[1694px] mx-auto w-full">
-          <h2 className="text-[64px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient mt-[83px] ">
+          <h2 className="text-[64px] font-semi-bold leading-[76.38px] text-center font-semibold color-gradient mt-[83px] ">
             The Biggest Tailwind UI Kit
           </h2>
           {/* box1 */}
-          <div className=" opo">
-            <div className="flex justify-center   gap-[34px] mt-[75px]">
-              <div className=" web-app-kits  gradient  rounded-md pt-16 px-6 pb-6  relative">
-                <div className=" w-full   h-full">
-                  <div className="flex flex-col gap-[10px] justify-center text-center ">
-                    <p className="text-4xl color-gradient font-semibold">
-                      Web App Kits
+          <div className="relative w-full">
+            <video
+              className="w-full max-w-[1694px%] mx-auto h-full max-h-[952px] relative "
+              height="100%"
+              width="100%"
+              src="/vedio/V2.webm"
+              sidedock="0"
+              title="0"
+              frameBorder="0"
+              y
+              // allow="autoplay; picture-in-picture"
+              autoPlay
+              loop
+              muted
+              type="video/mp4"
+              // onEnded={(event) => {
+              //   event.target.play();
+              // }} // Restart the video when it ends
+            ></video>
+            
+            <div className="absolute top-0 w-full video-grad-v2">
+              <div className="flex justify-center   gap-[34px] mt-[75px]">
+                <div className=" web-app-kits  gradient  rounded-md pt-16 px-6 pb-6  relative">
+                  <div className=" w-full   h-full">
+                    <div className="flex flex-col gap-[10px] justify-center text-center ">
+                      <p className="text-4xl color-gradient font-semibold">
+                        Web App Kits
+                      </p>
+                      <p className="text-[#ABAFB8] text-base">
+                        Layouts, Navigations, Forms, Tables, Content Blocks and
+                        more...
+                      </p>
+                    </div>
+                    <div className="flex gap-[27px]">
+                      <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/boxed_layout.svg" />
+                      <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sidebar_layout.svg" />
+                    </div>
+                  </div>
+                  {/* <div className="gradient max-w-[766px] w-full min-h-[391px] top-[2%] absolute"></div> */}
+                </div>
+                {/* numbers */}
+                <div className="flex flex-col gradient web-app-kits justify-center text-center  max-w-[480px] w-full  ">
+                  <div className="heading">
+                    <h3 className="text-[96px] text-gradient font-bold ">
+                      47,433
+                    </h3>
+                    <p className="text-[#ABAFB8] ">Happy Devs</p>
+                  </div>
+                </div>
+              </div>
+              {/* 3 boxes */}
+              <div className="flex gap-[34px] justify-center mt-8">
+                <div className="flex flex-col gradient2 web-app-kits gap-[10px] justify-center text-center  max-w-[404px] w-full  rounded-md py-11">
+                  <p className="text-4xl color-gradient leading-[45px] font-semibold">
+                    Marketing Kits
+                  </p>
+                  <p className="text-[#ABAFB8] text-base">
+                    Hero, Blog, Content, Footer and more...
+                  </p>
+                  <div>
+                    <img
+                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hero1.svg"
+                      className="mx-auto"
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-col gradient2  web-app-kits gap-[10px] justify-between text-center  max-w-[404px] w-full  rounded-md py-11">
+                  <div className="flexx-1">
+                    <p className="text-[64px] font-semibold color-gradient text-gradient-3000 leading-[76.38px]">
+                      3000+
                     </p>
                     <p className="text-[#ABAFB8] text-base">
-                      Layouts, Navigations, Forms, Tables, Content Blocks and
-                      more...
+                      Hand Crafted Components
                     </p>
                   </div>
-                  <div className="flex gap-[27px]">
-                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/boxed_layout.svg" />
-                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sidebar_layout.svg" />
+                  <div className="flexx-1">
+                    <p className="text-[64px] font-semibold color-gradient text-gradient-3000 ">
+                      30+
+                    </p>
+                    <p className="text-[#ABAFB8] text-base">
+                      Hand Crafted Components
+                    </p>
                   </div>
                 </div>
-                {/* <div className="gradient max-w-[766px] w-full min-h-[391px] top-[2%] absolute"></div> */}
-              </div>
-              {/* numbers */}
-              <div className="flex flex-col gradient web-app-kits justify-center text-center  max-w-[480px] w-full  ">
-                <div className="heading">
-                  <h3 className="text-[96px] text-gradient font-bold ">
-                    47,433
-                  </h3>
-                  <p className="text-[#ABAFB8] ">Happy Devs</p>
-                </div>
-              </div>
-            </div>
-            {/* 3 boxes */}
-            <div className="flex gap-[34px] justify-center mt-8">
-              <div className="flex flex-col gradient2 web-app-kits gap-[10px] justify-center text-center  max-w-[404px] w-full  rounded-md py-11">
-                <p className="text-4xl color-gradient leading-[45px] font-semibold">
-                  Marketing Kits
-                </p>
-                <p className="text-[#ABAFB8] text-base">
-                  Hero, Blog, Content, Footer and more...
-                </p>
-                <div>
-                  <img
-                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hero1.svg"
-                    className="mx-auto"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col gradient2  web-app-kits gap-[10px] justify-between text-center  max-w-[404px] w-full  rounded-md py-11">
-                <div className="flexx-1">
-                  <p
-                    className="text-[64px] font-semibold color-gradient text-gradient-3000 leading-[76.38px]"
-                  >
-                    3000+
+                <div className="flex flex-col gap-[10px] justify-center text-center gradient2 web-app-kits max-w-[404px] w-full  rounded-md py-11">
+                  <p className="text-4xl color-gradient font-semibold leading-[42.96px]">
+                    E-commerce Kits
                   </p>
                   <p className="text-[#ABAFB8] text-base">
-                    Hand Crafted Components
+                    Products, Checkouts, Carts, and more...
                   </p>
-                </div>
-                <div className="flexx-1">
-                  <p className="text-[64px] font-semibold color-gradient text-gradient-3000 ">
-                    30+
-                  </p>
-                  <p className="text-[#ABAFB8] text-base">
-                    Hand Crafted Components
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col gap-[10px] justify-center text-center gradient2 web-app-kits max-w-[404px] w-full  rounded-md py-11">
-                <p className="text-4xl color-gradient font-semibold leading-[42.96px]">
-                  E-commerce Kits
-                </p>
-                <p className="text-[#ABAFB8] text-base">
-                  Products, Checkouts, Carts, and more...
-                </p>
-                <div>
-                  <img
-                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hero1.svg"
-                    className="mx-auto"
-                  />
+                  <div>
+                    <img
+                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hero1.svg"
+                      className="mx-auto"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -307,7 +326,7 @@ const Homepage = () => {
         </div>
         {/* Over 47000+ happy developers */}
         <div className="Over 47000+ happy developers  mt-[291px]">
-          <h4 className="text-[64px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient  ">
+          <h4 className="text-[64px] font-semi-bold leading-[76.38px] text-center font-semibold color-gradient  ">
             Over 47000+ happy developers
           </h4>
           {/* jeo parkins */}
@@ -389,7 +408,21 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-circle  max-w-[262px] min-h-[262px] w-full absolute left-[43%] top-[28%] "></div>
+            <div className="bg-circle  max-w-[262px] min-h-[262px] w-full absolute left-[43%] top-[12%] "></div>
+            {/*  */}
+            <div className="mt-[178px] ">
+              <h4 className="text-[48px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient">
+                30 TailwindCSS Templates
+              </h4>
+              <div className="mt-[179px] backdrop">
+                <div className="">
+                  <img
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/build.png"
+                    className="mx-auto"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

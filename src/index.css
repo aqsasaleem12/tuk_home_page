@@ -277,3 +277,8 @@ code {
 
   border-radius: 12px;
 }
+.img-grad{
+  background: linear-gradient(86.23deg, #709997 1.72%, #27A5B7 22.66%, #6F6FFF 54.37%, #462370 98.87%);
+  /* filter: blur(100px); */
+  border-radius: 395px
+}

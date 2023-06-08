@@ -223,71 +223,175 @@ const Homepage = () => {
           </h2>
           {/* box1 */}
           <div className=" opo">
-
-          <div className="flex justify-center   gap-[34px] mt-[75px]">
-          <div className=" web-app-kits  gradient  rounded-md pt-16 px-6 pb-6  relative">
-            <div className=" w-full   h-full">
-
-            <div className="flex flex-col gap-[10px] justify-center text-center ">
-              <p className="text-4xl color-gradient t">Web App Kits</p>
-              <p className="text-[#ABAFB8] text-base">
-                Layouts, Navigations, Forms, Tables, Content Blocks and more...
-              </p>
-            </div>
-            <div className="flex gap-[27px]">
-              <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/boxed_layout.svg" />
-              <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sidebar_layout.svg" />
-            </div>
-            </div>
-            {/* <div className="gradient max-w-[766px] w-full min-h-[391px] top-[2%] absolute"></div> */}
-          </div>
-          {/* numbers */}
-          <div className="flex flex-col gradient web-app-kits justify-center text-center  max-w-[480px] w-full  ">
-            <div className="heading">
-
-            <h3 className="text-[96px] text-gradient font-bold ">47,433</h3>
-            <p className="text-[#ABAFB8] ">Happy Devs</p>
-            </div>
-          </div>
-          </div>
-          {/* 3 boxes */}
-          <div className="flex gap-[34px] justify-center mt-8">
-          <div className="flex flex-col gradient2 web-app-kits gap-[10px] justify-center text-center  max-w-[404px] w-full  rounded-md py-11">
-              <p className="text-4xl color-gradient t">Marketing Kits</p>
-              <p className="text-[#ABAFB8] text-base">
-              Hero, Blog, Content, Footer and more...
-              </p>
-              <div>
-                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hero1.svg" className="mx-auto" />
+            <div className="flex justify-center   gap-[34px] mt-[75px]">
+              <div className=" web-app-kits  gradient  rounded-md pt-16 px-6 pb-6  relative">
+                <div className=" w-full   h-full">
+                  <div className="flex flex-col gap-[10px] justify-center text-center ">
+                    <p className="text-4xl color-gradient font-semibold">
+                      Web App Kits
+                    </p>
+                    <p className="text-[#ABAFB8] text-base">
+                      Layouts, Navigations, Forms, Tables, Content Blocks and
+                      more...
+                    </p>
+                  </div>
+                  <div className="flex gap-[27px]">
+                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/boxed_layout.svg" />
+                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sidebar_layout.svg" />
+                  </div>
+                </div>
+                {/* <div className="gradient max-w-[766px] w-full min-h-[391px] top-[2%] absolute"></div> */}
+              </div>
+              {/* numbers */}
+              <div className="flex flex-col gradient web-app-kits justify-center text-center  max-w-[480px] w-full  ">
+                <div className="heading">
+                  <h3 className="text-[96px] text-gradient font-bold ">
+                    47,433
+                  </h3>
+                  <p className="text-[#ABAFB8] ">Happy Devs</p>
+                </div>
               </div>
             </div>
-          <div className="flex flex-col gradient2  web-app-kits gap-[10px] justify-between text-center  max-w-[404px] w-full  rounded-md py-11">
-            <div className="flexx-1">
-              <p className="text-[64px] font-semibold color-gradient text-gradient-3000 ">3000+</p>
-              <p className="text-[#ABAFB8] text-base">
-              Hand Crafted Components
-              </p>
-            </div>
-            <div className="flexx-1">
-              <p className="text-[64px] font-semibold color-gradient text-gradient-3000 ">30+</p>
-              <p className="text-[#ABAFB8] text-base">
-              Hand Crafted Components
-              </p>
-            </div>
-            </div>
-          <div className="flex flex-col gap-[10px] justify-center text-center gradient2 web-app-kits max-w-[404px] w-full  rounded-md py-11">
-              <p className="text-4xl color-gradient t">E-commerce Kits</p>
-              <p className="text-[#ABAFB8] text-base">
-              Products, Checkouts, Carts, and more...
-              </p>
-              <div>
-                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hero1.svg" className="mx-auto" />
+            {/* 3 boxes */}
+            <div className="flex gap-[34px] justify-center mt-8">
+              <div className="flex flex-col gradient2 web-app-kits gap-[10px] justify-center text-center  max-w-[404px] w-full  rounded-md py-11">
+                <p className="text-4xl color-gradient leading-[45px] font-semibold">
+                  Marketing Kits
+                </p>
+                <p className="text-[#ABAFB8] text-base">
+                  Hero, Blog, Content, Footer and more...
+                </p>
+                <div>
+                  <img
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hero1.svg"
+                    className="mx-auto"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col gradient2  web-app-kits gap-[10px] justify-between text-center  max-w-[404px] w-full  rounded-md py-11">
+                <div className="flexx-1">
+                  <p
+                    className="text-[64px] font-semibold color-gradient text-gradient-3000 leading-[76.38px]"
+                  >
+                    3000+
+                  </p>
+                  <p className="text-[#ABAFB8] text-base">
+                    Hand Crafted Components
+                  </p>
+                </div>
+                <div className="flexx-1">
+                  <p className="text-[64px] font-semibold color-gradient text-gradient-3000 ">
+                    30+
+                  </p>
+                  <p className="text-[#ABAFB8] text-base">
+                    Hand Crafted Components
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-[10px] justify-center text-center gradient2 web-app-kits max-w-[404px] w-full  rounded-md py-11">
+                <p className="text-4xl color-gradient font-semibold leading-[42.96px]">
+                  E-commerce Kits
+                </p>
+                <p className="text-[#ABAFB8] text-base">
+                  Products, Checkouts, Carts, and more...
+                </p>
+                <div>
+                  <img
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hero1.svg"
+                    className="mx-auto"
+                  />
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
-  
+        {/* Over 47000+ happy developers */}
+        <div className="Over 47000+ happy developers  mt-[291px]">
+          <h4 className="text-[64px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient  ">
+            Over 47000+ happy developers
+          </h4>
+          {/* jeo parkins */}
+          <div className="relative ">
+            <div className="flex justify-center gap-[42px] mt-[57px] z-30">
+              <div className="max-w-[619px] w-full  px-6 py-6 happy-devs-grad">
+                <p className="text-[#ffff]/40 max-w-[531px] w-full min-h-[88px]">
+                  Absolutely love this kit guys, you've done an incredible job
+                  and it's saved me countless hours in getting my V1 out Keep up
+                  the amazing work!
+                </p>
+                <div className="flex  gap-6 mt-[42px] items-center">
+                  <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/photo.png" />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-[#757575]">Joe Perkins</p>
+                    <p className="text-gray-600">
+                      Founder - Landscape Ventures
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+              <div className="max-w-[619px] w-full  px-6 py-6 happy-devs-grad">
+                <p className="text-[#ffff]/40 max-w-[531px] w-full  min-h-[120px]">
+                  I use TUK almost daily - from quick copy-paste solutions for
+                  prototyping, to inspiration in my own designs. The prebuilt
+                  components allow for rapid prototyping, saving me hours in
+                  pixel perfect design time. Efficient, clean cut, and allround
+                  badass!
+                </p>
+                <div className="flex  gap-6 mt-[10px] items-center">
+                  <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/photo.png" />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-[#757575]">Joe Perkins</p>
+                    <p className="text-gray-600">
+                      Founder - Landscape Ventures
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* jeo parkins */}
+            <div className="flex justify-center gap-[42px] mt-[42px]">
+              <div className="max-w-[619px] w-full px-6 py-6  happy-devs-grad3  ">
+                <p className="text-[#ffff]/40 max-w-[531px] w-full">
+                  I've been using TUK to completely map out entire layouts, but
+                  also as a inspiration and as a building block. Taking the
+                  ready made designs and hacking them down into what works for
+                  me. Having a template and a building block has radically cut
+                  down my time to get to where I want with my layouts!
+                </p>
+                <div className="flex  gap-6 mt-[42px] items-center">
+                  <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/photo.png" />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-[#757575]">Joe Perkins</p>
+                    <p className="text-gray-600">
+                      Founder - Landscape Ventures
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+              <div className="max-w-[619px] min-h-[234px] w-full  px-6 py-6 happy-devs-grad4 ">
+                <p className="text-[#ffff]/40 max-w-[531px]F">
+                  When I bought TUK Tailwind, I thought I would have to be a
+                  sort of beta tester given the price point. However I kid you
+                  not it is FLAWLESS and so is their support. EVERYTHING you
+                  would ever want is in here and each component is crafted to
+                  the highest design-standard - including responsiveness.
+                </p>
+                <div className="flex  gap-6 mt-[42px] items-center">
+                  <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/photo.png" />
+                  <div className="flex flex-col gap-2">
+                    <p className="text-[#757575]">Joe Perkins</p>
+                    <p className="text-gray-600">
+                      Founder - Landscape Ventures
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-circle  max-w-[262px] min-h-[262px] w-full absolute left-[43%] top-[28%] "></div>
+          </div>
+        </div>
       </div>
     </>
   );

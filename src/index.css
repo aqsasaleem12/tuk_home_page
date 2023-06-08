@@ -231,15 +231,49 @@ code {
 }
 .gradient {
   background: linear-gradient(180deg, #030014 -9.97%, rgba(3, 0, 22, 0) 92.46%);
-  
 
   border-radius: 12px;
 }
 
-.gradient2{
+.gradient2 {
   background: linear-gradient(180deg, rgba(3, 0, 22, 0) -1.41%, #030014 100%);
-backdrop-filter: blur(13.5px);
-/* Note: backdrop-filter has minimal browser support */
+  backdrop-filter: blur(13.5px);
 
-border-radius: 12px;
+  border-radius: 12px;
+}
+.bg-circle {
+  background: linear-gradient(to bottom, #27378c, #7a1756);
+  filter: blur(110.5px);
+  transform: rotate(-180deg);
+  z-index: -1;
+}
+
+.happy-devs-grad {
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    180deg,
+    rgba(3, 0, 22, 0) -276.75%,
+    #030014 -175.21%
+  );
+  backdrop-filter: blur(13.5px);
+
+  border-radius: 12px;
+}
+
+.happy-devs-grad4 {
+  background: linear-gradient(
+    180deg,
+    rgba(3, 0, 22, 0) -1.53%,
+    rgba(3, 0, 20, 0.58) 100%
+  );
+  backdrop-filter: blur(13.5px);
+
+  border-radius: 12px;
+}
+.happy-devs-grad3 {
+  background: linear-gradient(180deg, rgba(3, 0, 22, 0) -1.53%, #030014 100%);
+  backdrop-filter: blur(13.5px);
+
+  border-radius: 12px;
 }

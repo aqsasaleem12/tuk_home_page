@@ -222,7 +222,7 @@ const Homepage = () => {
             The Biggest Tailwind UI Kit
           </h2>
           {/* box1 */}
-          <div className="relative w-full">
+          <div className="relative max-w-[96%] mx-auto w-full">
             <video
               className="w-full max-w-[1694px%] mx-auto h-full max-h-[952px] relative "
               height="100%"
@@ -241,7 +241,7 @@ const Homepage = () => {
               //   event.target.play();
               // }} // Restart the video when it ends
             ></video>
-            
+
             <div className="absolute top-0 w-full video-grad-v2">
               <div className="flex justify-center   gap-[34px] mt-[75px]">
                 <div className=" web-app-kits  gradient  rounded-md pt-16 px-6 pb-6  relative">
@@ -414,13 +414,8 @@ const Homepage = () => {
               <h4 className="text-[48px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient">
                 30 TailwindCSS Templatesz
               </h4>
-              <div className="mt-[179px] backdrop">
-                <div className="">
-                  <img
-                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/build.png"
-                    className="mx-auto"
-                  />
-                </div>
+              <div>
+                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/temp.png" className="mx-auto"  />
               </div>
             </div>
           </div>

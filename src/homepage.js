@@ -46,7 +46,7 @@ const Homepage = () => {
           <hr className="custom-hr" />
         </div>
 
-      {/* main sec */}
+        {/* main sec */}
         <div className="main-se ">
           <div className="flex flex-col gap-2 justify-center items-center pt-[180px]">
             <h1 className="text-[64px]  leading-[76px] text-center font-semibold color-gradient heading-f">
@@ -163,48 +163,48 @@ const Homepage = () => {
 
             <div className="grid grid-cols-2 mx-auto absolute top-0 w-full overflow-hidden">
               {/* 1st-grid */}
-              <div className="flex flex-col gap-[7px] justify-center items-center  w-full min-h-[305px] h-full relative overflow-hidden group cursor-pointer">
-                <h3 className="text-[22px] font-normal leading-[35.2px] font-family color-gradient-grid  opacity-[0.4] group-hover:opacity-100 transition-all ease-in-out duration-300">
+              <div className="flex flex-col gap-[7px] justify-center items-center  w-full min-h-[305px] h-full relative overflow-hidden group ">
+                <h3 className="text-[22px] font-normal leading-[35.2px] font-family color-gradient-grid  opacity-[0.4] group-hover:opacity-100 transition-all ease-in-out duration-700">
                   Responsive design
                 </h3>
-                <p className="text-[#B4B4B4]/40 group-hover:text-[#B4B4B4]/100 text-sm max-w-[187px] w-full text-center ">
+                <p className="text-[#B4B4B4]/40 group-hover:text-[#B4B4B4]/100 text-sm max-w-[187px] w-full text-center transition-all ease-in-out duration-700">
                   Adaptive design that provides a consistent experience across
                   breakpoints
                 </p>
-                <div className="light-shadow absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300"></div>
+                <div className="light-shadow absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-700"></div>
               </div>
               {/* 2nd-grid */}
-              <div className="flex flex-col gap-[7px] justify-center items-center w-full min-h-[305px] h-full  relative overflow-hidden group cursor-pointer">
-                <h3 className="text-[22px] font-normal leading-[35.2px] font-family color-gradient-grid opacity-[0.4] group-hover:opacity-100 transition-all ease-in-out duration-300">
+              <div className="flex flex-col gap-[7px] justify-center items-center w-full min-h-[305px] h-full  relative overflow-hidden group ">
+                <h3 className="text-[22px] font-normal leading-[35.2px] font-family color-gradient-grid opacity-[0.4] group-hover:opacity-100 transition-all ease-in-out duration-700">
                   Tested components
                 </h3>
-                <p className="text-[#B4B4B4]/40 group-hover:text-[#B4B4B4]/100 text-sm max-w-[189px] w-full text-center ">
+                <p className="text-[#B4B4B4]/40 group-hover:text-[#B4B4B4]/100 text-sm max-w-[189px] w-full text-center transition-all ease-in-out duration-700">
                   Rigorously tested components that meet the highest quality
                   standards.
                 </p>
-                <div className="light-shadow-tested absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300"></div>
+                <div className="light-shadow-tested absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-700"></div>
               </div>
               {/* 3rd-grid */}
-              <div className="flex flex-col gap-[7px] justify-center items-center w-full min-h-[305px] h-full  relative overflow-hidden group cursor-pointer">
-                <h3 className="text-[22px] font-normal leading-[35.2px] font-family color-gradient-grid opacity-[0.4] group-hover:opacity-100 transition-all ease-in-out duration-300">
+              <div className="flex flex-col gap-[7px] justify-center items-center w-full min-h-[305px] h-full  relative overflow-hidden group ">
+                <h3 className="text-[22px] font-normal leading-[35.2px] font-family color-gradient-grid opacity-[0.4] group-hover:opacity-100 transition-all ease-in-out duration-700">
                   Cross browser compatible
                 </h3>
-                <p className="text-[#B4B4B4]/40 group-hover:text-[#B4B4B4]/100 text-sm max-w-[191px] w-full text-center ">
+                <p className="text-[#B4B4B4]/40 group-hover:text-[#B4B4B4]/100 text-sm max-w-[191px] w-full text-center transition-all ease-in-out duration-700">
                   Cross browser compatible components that are consistent
                   throughout the web
                 </p>
-                <div className="light-shadow absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300"></div>
+                <div className="light-shadow-Cross absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-700"></div>
               </div>
               {/* 4th-grid */}
-              <div className="flex flex-col gap-[7px] justify-center   items-center w-full min-h-[305px] h-full  relative overflow-hidden group cursor-pointer">
-                <h3 className="text-[22px] font-normal leading-[35.2px] font-family color-gradient-grid opacity-[0.4] group-hover:opacity-100 transition-all ease-in-out duration-300">
+              <div className="flex flex-col gap-[7px] justify-center   items-center w-full min-h-[305px] h-full  relative overflow-hidden group ">
+                <h3 className="text-[22px] font-normal leading-[35.2px] font-family color-gradient-grid opacity-[0.4] group-hover:opacity-100 transition-all ease-in-out duration-700">
                   Inclusive & accessible
                 </h3>
-                <p className="text-[#B4B4B4]/40 group-hover:text-[#B4B4B4]/100 text-sm max-w-[187px] w-full text-center ">
+                <p className="text-[#B4B4B4]/40 group-hover:text-[#B4B4B4]/100 text-sm max-w-[187px] w-full text-center transition-all ease-in-out duration-700 ">
                   Built on the curb-cut effect, WCAG accessibility comes baked
                   in for a truly inclusive experience
                 </p>
-                <div className="light-shadow-accessible absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300"></div>
+                <div className="light-shadow-accessible absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-700"></div>
               </div>
             </div>
             <div className="absolute top-[47.5%] bottom-[50%] w-full ">
@@ -216,7 +216,78 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-       
+        {/* biggest-kit */}
+        <div className="max-w-[1694px] mx-auto w-full">
+          <h2 className="text-[64px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient mt-[83px] ">
+            The Biggest Tailwind UI Kit
+          </h2>
+          {/* box1 */}
+          <div className=" opo">
+
+          <div className="flex justify-center   gap-[34px] mt-[75px]">
+          <div className=" web-app-kits  gradient  rounded-md pt-16 px-6 pb-6  relative">
+            <div className=" w-full   h-full">
+
+            <div className="flex flex-col gap-[10px] justify-center text-center ">
+              <p className="text-4xl color-gradient t">Web App Kits</p>
+              <p className="text-[#ABAFB8] text-base">
+                Layouts, Navigations, Forms, Tables, Content Blocks and more...
+              </p>
+            </div>
+            <div className="flex gap-[27px]">
+              <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/boxed_layout.svg" />
+              <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sidebar_layout.svg" />
+            </div>
+            </div>
+            {/* <div className="gradient max-w-[766px] w-full min-h-[391px] top-[2%] absolute"></div> */}
+          </div>
+          {/* numbers */}
+          <div className="flex flex-col gradient web-app-kits justify-center text-center  max-w-[480px] w-full  ">
+            <div className="heading">
+
+            <h3 className="text-[96px] text-gradient font-bold ">47,433</h3>
+            <p className="text-[#ABAFB8] ">Happy Devs</p>
+            </div>
+          </div>
+          </div>
+          {/* 3 boxes */}
+          <div className="flex gap-[34px] justify-center mt-8">
+          <div className="flex flex-col gradient2 web-app-kits gap-[10px] justify-center text-center  max-w-[404px] w-full  rounded-md py-11">
+              <p className="text-4xl color-gradient t">Marketing Kits</p>
+              <p className="text-[#ABAFB8] text-base">
+              Hero, Blog, Content, Footer and more...
+              </p>
+              <div>
+                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hero1.svg" className="mx-auto" />
+              </div>
+            </div>
+          <div className="flex flex-col gradient2  web-app-kits gap-[10px] justify-between text-center  max-w-[404px] w-full  rounded-md py-11">
+            <div className="flexx-1">
+              <p className="text-[64px] font-semibold color-gradient text-gradient-3000 ">3000+</p>
+              <p className="text-[#ABAFB8] text-base">
+              Hand Crafted Components
+              </p>
+            </div>
+            <div className="flexx-1">
+              <p className="text-[64px] font-semibold color-gradient text-gradient-3000 ">30+</p>
+              <p className="text-[#ABAFB8] text-base">
+              Hand Crafted Components
+              </p>
+            </div>
+            </div>
+          <div className="flex flex-col gap-[10px] justify-center text-center gradient2 web-app-kits max-w-[404px] w-full  rounded-md py-11">
+              <p className="text-4xl color-gradient t">E-commerce Kits</p>
+              <p className="text-[#ABAFB8] text-base">
+              Products, Checkouts, Carts, and more...
+              </p>
+              <div>
+                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/hero1.svg" className="mx-auto" />
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+  
       </div>
     </>
   );

@@ -125,41 +125,48 @@ code {
   background: linear-gradient(157.22deg, #e7e7e7 35.46%, #a9a5a5 131.63%);
   border: 1px solid #1f1b36;
 }
-.light-shadow{
+.light-shadow {
   width: 15%;
   height: 66%;
   right: -40px;
   top: 50%;
-  background: #826BFF;
+  background: #826bff;
   filter: blur(100px);
   transform: rotate(-90deg);
 }
-.light-shadow-tested{
+.light-shadow-tested {
   width: 15%;
   height: 66%;
   left: -40px;
   top: 50%;
-  background: #826BFF;
+  background: #826bff;
   filter: blur(100px);
   transform: rotate(-90deg);
 }
-.light-shadow-accessible{
+.light-shadow-accessible {
   width: 15%;
   height: 66%;
   left: -40px;
-  top: 50%;
-  background: #826BFF;
+  bottom: 50%;
+  background: #826bff;
   filter: blur(100px);
   transform: rotate(-90deg);
 }
-
+.light-shadow-Cross {
+  width: 15%;
+  height: 66%;
+  right: -40px;
+  bottom: 50%;
+  background: #826bff;
+  filter: blur(100px);
+  transform: rotate(-90deg);
+}
 .color-gradient-grid {
   background: linear-gradient(179.91deg, #e7e7e7 35.32%, #a9a5a5 75.92%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-
 }
 
 .custom-hr-grid {
@@ -185,5 +192,54 @@ code {
     hsla(0, 0%, 100%, 0.1) 56.92%,
     hsla(0, 0%, 100%, 0) 81.72%
   );
-  box-shadow: 5px 5px 40px #826BFF;
+  box-shadow: 5px 5px 45px #826bff;
+}
+.web-app-kits {
+  -webkit-backdrop-filter: blur(27.1828px);
+  backdrop-filter: blur(54.1828px);
+  background: linear-gradient(
+    180.57deg,
+    rgba(0, 0, 0, 0.05) 0.24%,
+    rgba(3, 1, 20, 0.21) 1006
+  );
+  border-radius: 12px;
+}
+.opo {
+  background-image: url("/public//bg-p.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text-gradient {
+  background: linear-gradient(
+    270deg,
+    #ff7a0b 3.3%,
+    #689e4e 41.56%,
+    #6575ff 69.7%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text-gradient-3000 {
+  background: linear-gradient(179.42deg, #f89a0e 6.99%, #6575ff 87.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.gradient {
+  background: linear-gradient(180deg, #030014 -9.97%, rgba(3, 0, 22, 0) 92.46%);
+  
+
+  border-radius: 12px;
+}
+
+.gradient2{
+  background: linear-gradient(180deg, rgba(3, 0, 22, 0) -1.41%, #030014 100%);
+backdrop-filter: blur(13.5px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 12px;
 }

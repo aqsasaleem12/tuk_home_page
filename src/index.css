@@ -293,6 +293,17 @@ code {
   background: rgba(2, 0, 20, 0.38);
   backdrop-filter: blur(6px);
   border-radius: 12px;
- 
+
   min-height: 605px;
+}
+.temp-grad {
+  background: linear-gradient( 90deg, rgba(38, 0, 255, 0) 9.54%, #74aabe 25.46%, #e4eeb4 51%, #2600ff 70.09%, rgba(38, 0, 255, 0) 89.46% );
+  filter: blur(31px);
+  max-width: 1499px;
+  min-height: 311px;
+  /* top: 0; */
+  /* z-index: 9999; */
+  margin-top: -130px;
+  margin-left: auto;
+  margin-right: auto;
 }

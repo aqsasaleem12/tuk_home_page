@@ -415,8 +415,20 @@ const Homepage = () => {
                 30 TailwindCSS Templatesz
               </h4>
               <div>
-                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/temp.png" className="mx-auto"  />
+                <img
+                  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/temp.png"
+                  className="mx-auto"
+                />
               </div>
+              {/* <div>
+                <div className="relative">
+                  <img
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/templates.png"
+                    className="mx-auto"
+                  />
+                  <div className="temp-grad "></div>
+                </div>
+              </div> */}
             </div>
           </div>
         </div>

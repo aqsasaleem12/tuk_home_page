@@ -420,15 +420,21 @@ const Homepage = () => {
                   className="mx-auto"
                 />
               </div>
-              {/* <div>
-                <div className="relative">
+              <div>
+                <div className="relative overflow-hidden">
                   <img
                     src="https://tuk-cdn.s3.amazonaws.com/can-uploader/templates.png"
                     className="mx-auto"
                   />
                   <div className="temp-grad "></div>
+                  <div className="absolute -bottom-[121px]">
+                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/round.png" />
+                  </div>
+                  <div className="absolute bottom-[25px] right-[14%]">
+                    <img  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/half-moon.png" />
+                  </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

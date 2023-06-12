@@ -8,11 +8,10 @@ const Homepage = () => {
   useEffect(() => {
     const handlePointerMove = (event) => {
       if (event.clientX <= 1536 && event.clientY <= 375) {
+        console.log(event);
         const { clientX, clientY } = event;
         setLeft(clientX);
         setTop(clientY);
-      } else {
-        return;
       }
     };
 
@@ -50,7 +49,7 @@ const Homepage = () => {
   };
 
   return (
-    <div className="overflow-hidden ">
+    <div className=" ">
       {/* top-bar */}
       <section className="top-bar">
         <div className="fixed w-full bg-main top-0   z-30">
@@ -480,12 +479,12 @@ const Homepage = () => {
         </div>
       </section>
       {/*  */}
-      <section area-aria-label="last-sec">
-        <div className="mt-[178px]">
+      <section area-aria-label="last-sec ">
+        <div className="mt-[178px]  ">
           <h4 className="text-[48px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient">
             30 TailwindCSS Templates
           </h4>
-          <div className="relative">
+          <div className="relative -z-30">
             <div className="relative blue-green-gradient max-w-[1597px] w-full mx-auto  mt-[112px]">
               <div className="drkbg absolute"></div>
             </div>
@@ -495,19 +494,20 @@ const Homepage = () => {
                 className="mx-auto"
               />
             </div>
-            <div className="absolute -right-12 top-[70%] w-full ">
+            <div className="absolute inset-x-0 top-[69%] w-full ">
               <img
-                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/half-round.png"
+                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/round-grad.png"
                 className="mx-auto"
               />
             </div>
+            <div className="bg-[#030014]  max-w-[1687px] min-h-[158px] inset-x-0 -bottom-[66%] absolute mx-auto w-full"></div>
           </div>
         </div>
       </section>
       {/*  footer*/}
-      <section area-aria-label="footer">
+      <section area-aria-label="footer" className="z-30">
         {/* logo */}
-        <div className="flex flex-col gap-12 mt-[290px]">
+        <div className="flex flex-col gap-12 mt-[390px] ">
           <div className="max-w-[1216px] w-full mx-auto">
             <div className="flex justify-between">
               <div className="">

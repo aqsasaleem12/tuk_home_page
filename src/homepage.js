@@ -508,131 +508,68 @@ const Homepage = () => {
       <section area-aria-label="footer" className="z-30">
         {/* logo */}
         <div className="flex flex-col gap-12 mt-[390px] ">
-          <div className="max-w-[1216px] w-full mx-auto">
+          <div className="max-w-[1100px] w-full mx-auto">
             <div className="flex justify-between">
-              <div className="">
+              <div className="max-w-[320px] w-full">
                 <img
                   src="https://tuk-cdn.s3.amazonaws.com/can-uploader/TukUpdatedLogov3.svg"
                   alt="tuk-logo"
                 />
               </div>
               {/* menu */}
-              <div className="flex max-w-[828px] w-full gap-8 ">
-                <ul className="flex flex-col gap-4 max-w-[140px] w-full">
-                  <li class=" text-lg font-semibold leading-none text-gray-50">
-                    Product
+              <div className="flex max-w-[823px]  justify-around w-full gap-8 ">
+              
+              
+                <ul className="flex flex-col gap-4">
+                 
+                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
+                  FAQ
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Overview
+                  Documentation
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Features
+                  Blog
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Solutions
+                  Changelog
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Tutorials
+                  Pricing
                   </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Pricing
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Releases
-                  </li>
+                
                 </ul>
-                <ul className="flex flex-col gap-4 max-w-[140px] w-full">
-                  <li class=" text-lg font-semibold leading-none text-gray-50">
-                    Company
+                <ul className="flex flex-col gap-4">
+                 
+                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
+                  Components
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    About us
+                  UI Kits
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Careers
+                  Templates
                   </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Press
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    News
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Media kit
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Contact
-                  </li>
-                </ul>
-                <ul className="flex flex-col gap-4 max-w-[140px] w-full">
-                  <li class=" text-lg font-semibold leading-none text-gray-50">
-                    Resources
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Blog
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Newsletter
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Events
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Help centre
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Tutorials
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Support
-                  </li>
-                </ul>
-                <ul className="flex flex-col gap-4 max-w-[140px] w-full">
-                  <li class=" text-lg font-semibold leading-none text-gray-50">
-                    Social
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Twitter
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    LinkedIn
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Facebook
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    GitHub
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    AngelList
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Dribbble
-                  </li>
+                  
+                  
+                 
                 </ul>
 
-                <ul className="flex flex-col gap-4 max-w-[140px] w-full">
-                  <li class=" text-lg font-semibold leading-none text-gray-50">
-                    Legal
+                <ul className="flex flex-col gap-4">
+                  
+                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
+                  Contact us
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Terms
+                  Privacy policy
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Privacy
+                  Terms of service
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Cookies
+                  Become an affiliate
                   </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Licenses
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Settings
-                  </li>
-                  <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                    Contact
-                  </li>
+                 
                 </ul>
               </div>
             </div>

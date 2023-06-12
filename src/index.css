@@ -241,7 +241,7 @@ code {
 
   border-radius: 12px;
 }
-.bg-circle {
+#blob {
   background: linear-gradient(to bottom, #27378c, #7a1756);
   filter: blur(110.5px);
   transform: rotate(-180deg);
@@ -296,14 +296,28 @@ code {
 
   min-height: 605px;
 }
-.temp-grad {
-  background: linear-gradient( 90deg, rgba(38, 0, 255, 0) 9.54%, #74aabe 25.46%, #e4eeb4 51%, #2600ff 70.09%, rgba(38, 0, 255, 0) 89.46% );
-  filter: blur(31px);
-  max-width: 1316px;
-  min-height: 194px;
- 
-  margin-top: -146px;
-  margin-left: auto;
-  margin-right: auto;
+.blue-green-gradient {
+  background: linear-gradient(
+    86.23deg,
+    #709997 1.72%,
+    #27a5b7 22.66%,
+    #6f6fff 54.37%,
+    #462370 98.87%
+  );
+  filter: blur(100px);
+  border-radius: 395px;
+  max-width: 1433px;
+  min-height: 505px;
 }
 
+/* moving box */
+.filter-blur-bg {
+  background: linear-gradient(180deg, #030014 0%, rgba(3, 0, 20, 0) 86.43%);
+}
+
+.drkbg {
+  width: 1597px;
+  height: 464px;
+
+  background: linear-gradient(180deg, #030014 0%, rgba(3, 0, 20, 0) 86.43%);
+}

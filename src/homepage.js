@@ -508,7 +508,7 @@ const Homepage = () => {
       <section area-aria-label="footer" className="z-30">
         {/* logo */}
         <div className="flex flex-col gap-12 mt-[390px] ">
-          <div className="max-w-[1100px] w-full mx-auto">
+          <div className="max-w-[1216px] w-full mx-auto">
             <div className="flex justify-between">
               <div className="max-w-[320px] w-full">
                 <img
@@ -517,10 +517,10 @@ const Homepage = () => {
                 />
               </div>
               {/* menu */}
-              <div className="flex max-w-[823px]  justify-around w-full gap-8 ">
+              <div className="flex max-w-[832px]  justify-evenly  w-full gap-8 ">
               
               
-                <ul className="flex flex-col gap-4">
+                <ul className="flex flex-col gap-4 max-w-[256px] w-full">
                  
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
                   FAQ
@@ -539,7 +539,7 @@ const Homepage = () => {
                   </li>
                 
                 </ul>
-                <ul className="flex flex-col gap-4">
+                <ul className="flex flex-col gap-4 max-w-[256px] w-full">
                  
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
                   Components
@@ -555,7 +555,7 @@ const Homepage = () => {
                  
                 </ul>
 
-                <ul className="flex flex-col gap-4">
+                <ul className="flex flex-col gap-4 max-w-[256px] w-full">
                   
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
                   Contact us

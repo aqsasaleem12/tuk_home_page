@@ -29,18 +29,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #030014;
 }
-/* @font-face {
-  font-family: 'semiboldeot';
-   src: url("./fonts/font/SF-Pro-Display-Black.ttf");
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/SF-Pro-Display-Semibold.otf") format("opentype"),
+    url("./fonts/SF-Pro-Display-Semibold.ttf") format("truetype"),
+    url("./fonts/SF-Pro-Display-Semibold.woff") format("woff");
 }
-.heading-f{
-  font-family: "SF-Pro-Display";
+.heading-f {
+  font-family: "SF Pro Display";
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
 
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/SF-Pro-Display-Light.eot") format("opentype"),
+    url("./fonts/SF-Pro-Display-Light.ttf") format("truetype"),
+    url("./fonts/SF-Pro-Display-Light.woff") format("woff");
+}
+.light-trust {
+  font-family: "SF Pro Display";
+}
 .bgr-light {
   background: hsla(0, 0%, 100%, 0.21);
   border-radius: 100%;
@@ -300,7 +307,7 @@ code {
   );
   filter: blur(100px);
   border-radius: 395px;
-  
+
   min-height: 505px;
 }
 
@@ -314,4 +321,12 @@ code {
   height: 464px;
 
   background: linear-gradient(180deg, #030014 0%, rgba(3, 0, 20, 0) 86.43%);
+}
+.my-section {
+  width: 1280px;
+  height: 100%;
+  /* position: relative; */
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat !important;
 }

@@ -1,52 +1,68 @@
 import React, { useEffect, useState } from "react";
 
 const Homepage = () => {
-  const [left, setLeft] = useState(0);
-  const [top, setTop] = useState(0);
-  const [text, setText] = useState("");
+  // const [left, setLeft] = useState(0);
+  // const [top, setTop] = useState(0);
+  // const [text, setText] = useState("");
+  const [backgroundPosition, setBackgroundPosition] = useState({
+    x: 50,
+    y: 50,
+  });
+  const handleMouseMove = (event) => {
+    const { clientX, clientY } = event;
+    const { left, top, width, height } = event.target.getBoundingClientRect();
 
-  useEffect(() => {
-    const handlePointerMove = (event) => {
-      if (event.clientX <= 1536 && event.clientY <= 375) {
-        console.log(event);
-        const { clientX, clientY } = event;
-        setLeft(clientX);
-        setTop(clientY);
-      }
-    };
+    const x = ((clientX - left) / width) * 100;
+    const y = ((clientY - top) / height) * 100;
 
-    window.addEventListener("pointermove", handlePointerMove);
-
-    return () => {
-      window.removeEventListener("pointermove", handlePointerMove);
-    };
-  }, []);
-
-  const handleMouseOver = (event) => {
-    let iteration = 0;
-    clearInterval(interval);
-
-    const interval = setInterval(() => {
-      const value = event.target.dataset.value;
-      const updatedText = value
-        .split("")
-        .map((letter, index) => {
-          if (index < iteration) {
-            return value[index];
-          }
-          return String.fromCharCode(65 + Math.floor(Math.random() * 26));
-        })
-        .join("");
-
-      setText(updatedText);
-
-      if (iteration >= value.length) {
-        clearInterval(interval);
-      }
-
-      iteration += 1 / 3;
-    }, 30);
+    setBackgroundPosition({ x, y });
   };
+
+  const handleMouseLeave = () => {
+    setBackgroundPosition({ x: 50, y: 50 });
+  };
+  // useEffect(() => {
+  //   const handlePointerMove = (event) => {
+  //     if (event.clientX <= 1536 && event.clientY <= 375) {
+  //       console.log(event);
+  //       const { clientX, clientY } = event;
+  //       setLeft(clientX);
+  //       setTop(clientY);
+  //     }
+  //   };
+
+  //   window.addEventListener("pointermove", handlePointerMove);
+
+  //   return () => {
+  //     window.removeEventListener("pointermove", handlePointerMove);
+  //   };
+  // }, []);
+
+  // const handleMouseOver = (event) => {
+  //   let iteration = 0;
+  //   clearInterval(interval);
+
+  //   const interval = setInterval(() => {
+  //     const value = event.target.dataset.value;
+  //     const updatedText = value
+  //       .split("")
+  //       .map((letter, index) => {
+  //         if (index < iteration) {
+  //           return value[index];
+  //         }
+  //         return String.fromCharCode(65 + Math.floor(Math.random() * 26));
+  //       })
+  //       .join("");
+
+  //     setText(updatedText);
+
+  //     if (iteration >= value.length) {
+  //       clearInterval(interval);
+  //     }
+
+  //     iteration += 1 / 3;
+  //   }, 30);
+  // };
 
   return (
     <div className=" ">
@@ -174,7 +190,7 @@ const Homepage = () => {
         {/* industry leaders-heading */}
         <div className="flex flex-col gap-5">
           <div className="mt-[15px]">
-            <h2 className="text-xs font-light text-[#A9A6A6] text-center ">
+            <h2 className="text-xs font-light text-[#A9A6A6] text-center light-trust">
               Trusted and used by industry leaders
             </h2>
           </div>
@@ -196,7 +212,7 @@ const Homepage = () => {
       {/* The Biggest Tailwind UI Kit heading */}
       <section area-aria-label="t Tailwind UI Kit">
         <div className="flex flex-col gap-2 max-w-[1003px] w-full mx-auto">
-          <h2 className="text-[64px] font-semi-bold leading-[76.38px] text-center font-semibold color-gradient mt-[83px] ">
+          <h2 className="text-[64px] font-semi-bold leading-[76.38px] text-center font-semibold color-gradient mt-[83px] heading-f">
             The Biggest Tailwind UI Kit
           </h2>
           <p className="text-[#ABAFB8] text-center max-w-[504px] w-full mx-auto leading-[160%] text-base font-normal font-family">
@@ -271,7 +287,7 @@ const Homepage = () => {
       {/* biggest-kit */}
       <section area-aria-label=" biggest-kit">
         <div className="max-w-[1694px] mx-auto w-full">
-          <h2 className="text-[64px] font-semi-bold leading-[76.38px] text-center font-semibold color-gradient mt-[83px] ">
+          <h2 className="text-[64px] font-semi-bold leading-[76.38px] text-center font-semibold color-gradient mt-[83px] heading-f">
             The Biggest Tailwind UI Kit
           </h2>
           {/* box1 */}
@@ -383,13 +399,26 @@ const Homepage = () => {
       {/* Over 47000+ happy developers */}
       <section area-aria-label="Over-47000+ ">
         <div className="Over 47000+ happy developers mt-[291px]">
-          <h4 className="text-[64px] font-semi-bold leading-[76.38px] text-center font-semibold color-gradient  ">
+          <h4 className="text-[64px] font-semi-bold leading-[76.38px] text-center font-semibold color-gradient  heading-f">
             Over 47000+ happy developers
           </h4>
           {/* jeo parkins */}
           <div className="relative ">
-            <div className="flex justify-center gap-[42px] mt-[57px] z-30">
-              <div className="max-w-[619px] w-full  px-6 py-6 happy-devs-grad">
+            <div className="flex justify-center gap-[42px] mt-[57px] z-1">
+              <div
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+                className="my-section mx-auto absolute top-0 z-0 inset-x-0"
+                style={{
+                  background:
+                    "url(https://tuk-cdn.s3.amazonaws.com/can-uploader/gradd.png)",
+                  backgroundPosition: `${backgroundPosition.x}% ${backgroundPosition.y}%`,
+                }}
+              ></div>
+              <div
+                  onMouseMove={handleMouseMove}
+                  onMouseLeave={handleMouseLeave}
+              className="max-w-[619px] w-full  px-6 py-6 happy-devs-grad">
                 <p className="text-[#ffff]/40 max-w-[531px] w-full min-h-[88px]">
                   Absolutely love this kit guys, you've done an incredible job
                   and it's saved me countless hours in getting my V1 out Keep up
@@ -406,7 +435,10 @@ const Homepage = () => {
                 </div>
               </div>
               {/*  */}
-              <div className="max-w-[619px] w-full  px-6 py-6 happy-devs-grad">
+              <div 
+                  onMouseMove={handleMouseMove}
+                  onMouseLeave={handleMouseLeave}
+              className="max-w-[619px] w-full  px-6 py-6 happy-devs-grad">
                 <p className="text-[#ffff]/40 max-w-[531px] w-full  min-h-[120px]">
                   I use TUK almost daily - from quick copy-paste solutions for
                   prototyping, to inspiration in my own designs. The prebuilt
@@ -426,7 +458,10 @@ const Homepage = () => {
               </div>
             </div>
             {/* jeo parkins */}
-            <div className="flex justify-center gap-[42px] mt-[42px]">
+            <div
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+            className="flex justify-center gap-[42px] mt-[42px]">
               <div className="max-w-[619px] w-full px-6 py-6  happy-devs-grad3  ">
                 <p className="text-[#ffff]/40 max-w-[531px] w-full">
                   I've been using TUK to completely map out entire layouts, but
@@ -446,7 +481,10 @@ const Homepage = () => {
                 </div>
               </div>
               {/*  */}
-              <div className="max-w-[619px] min-h-[234px] w-full  px-6 py-6 happy-devs-grad4 ">
+              <div 
+                  onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+              className="max-w-[619px] min-h-[234px] w-full  px-6 py-6 happy-devs-grad4">
                 <p className="text-[#ffff]/40 max-w-[531px]F">
                   When I bought TUK Tailwind, I thought I would have to be a
                   sort of beta tester given the price point. However I kid you
@@ -465,7 +503,8 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div
+
+            {/* <div
               id="blob"
               style={{
                 position: "absolute",
@@ -473,7 +512,7 @@ const Homepage = () => {
                 top: `${top}px`,
               }}
               className="  max-w-[262px] min-h-[262px] z-0 w-full absolute left-[43%] top-[12%] "
-            ></div>
+            ></div> */}
             {/*  */}
           </div>
         </div>
@@ -481,7 +520,7 @@ const Homepage = () => {
       {/*  */}
       <section area-aria-label="last-sec ">
         <div className="mt-[178px]  ">
-          <h4 className="text-[48px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient">
+          <h4 className="text-[48px] font-semi-bold leading-[76p.38x] text-center font-semibold color-gradient heading-f">
             30 TailwindCSS Templates
           </h4>
           <div className="relative -z-30">
@@ -518,58 +557,48 @@ const Homepage = () => {
               </div>
               {/* menu */}
               <div className="flex max-w-[832px]  justify-evenly  w-full gap-8 ">
-              
-              
                 <ul className="flex flex-col gap-4 max-w-[256px] w-full">
-                 
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                  FAQ
+                    FAQ
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                  Documentation
+                    Documentation
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                  Blog
+                    Blog
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                  Changelog
+                    Changelog
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                  Pricing
+                    Pricing
                   </li>
-                
                 </ul>
                 <ul className="flex flex-col gap-4 max-w-[256px] w-full">
-                 
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                  Components
+                    Components
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                  UI Kits
+                    UI Kits
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                  Templates
+                    Templates
                   </li>
-                  
-                  
-                 
                 </ul>
 
                 <ul className="flex flex-col gap-4 max-w-[256px] w-full">
-                  
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                  Contact us
+                    Contact us
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                  Privacy policy
+                    Privacy policy
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                  Terms of service
+                    Terms of service
                   </li>
                   <li class="text-base font-medium hover:text-gray-500 cursor-pointer leading-none text-gray-300">
-                  Become an affiliate
+                    Become an affiliate
                   </li>
-                 
                 </ul>
               </div>
             </div>
